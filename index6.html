@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Interactive Event Handling</h1>
+
+  <button id="clickBtn">Click Me</button>
+  <button id="hoverBtn">Hover over me!</button>
+
+  <input type="text" id="keypressInput" placeholder="Type something" />
+  
+  <div class="secret-action" id="secretAction">Double Click or Long Press Me!</div>
+
+  <script src="script.js"></script>
+
+<h1>Interactive Elements</h1>
+
+<!-- Button that changes text or color -->
+<button id="colorBtn">Change My Color</button>
+
+<!-- Image Gallery -->
+<div id="gallery">
+  <img src="https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""height="600" width="600" class="gallery-image">
+  <img src="https://images.pexels.com/photos/30885764/pexels-photo-30885764/free-photo-of-scrabble-tiles-spelling-website-on-wooden-surface.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""height="600" width="600" class="gallery-image">
+  <img src="https://images.pexels.com/photos/7359/startup-photos.jpg?auto=compress&cs=tinysrgb&w=600&lazy=load"  class="gallery-image">
+</div>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button class="tab-btn" data-target="tab1">Tab 1</button>
+  <button class="tab-btn" data-target="tab2">Tab 2</button>
+  <div id="tab1" class="tab-content">
+    <p>This is Tab 1 content.</p>
+  </div>
+  <div id="tab2" class="tab-content" style="display:none;">
+    <p>This is Tab 2 content.</p>
+  </div>
+</div>
+<h1>Form Validation</h1>
+
+<form id="userForm">
+  <input type="text" id="name" placeholder="Name (Required)" required>
+  <br><br>
+  <input type="email" id="email" placeholder="Email" required>
+  <br><br>
+  <input type="password" id="password" placeholder="Password (min 8 characters)" required>
+  <br><br>
+  <input type="text" id="address" placeholder="Address">
+  <br><br>
+  <label for="gender">Gender</label>
+  <input type="radio" name="gender" value="Female">Female
+  <input type="radio" name="gender" value="Male">Male
+  <br><br>
+  <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Tanzania">Tanzania</option>
+      <option value="Burundi">Burundi</option>
+      <option value="Zambia">Zambia</option>
+      <option value="Kenya">Kenya</option>
+    <br><br>
+  <input type="submit" value="Register">
+  <button type="submit">Submit</button>
+</form>
+<div id="validationMessage"></div>
+
+</body>
+</html>
